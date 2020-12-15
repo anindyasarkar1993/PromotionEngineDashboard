@@ -58,6 +58,7 @@ namespace Promotion_Engine.UnitTest
                 new Product(){Id = "D", Price = 15}
 
             };
+            var result = Program.GetTotalPrice(lp);
             
         }
     }
