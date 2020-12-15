@@ -41,5 +41,10 @@ namespace Promotion_Engine.UnitTest
             var result = Program.GetTotalPrice(lp);
             Assert.That(result, Is.EqualTo(370));
         }
+        [Test]
+        public void GetTotalPriceBackMultipleProductScenarioC()
+        {
+            
+        }
     }
 }
