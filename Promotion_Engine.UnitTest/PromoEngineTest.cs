@@ -70,6 +70,7 @@ namespace Promotion_Engine.UnitTest
                 new Product(){Id = "B", Price = 30},
             };
             var result = Program.GetTotalPrice(lp);
+            Assert.That(result, Is.EqualTo(80));
         }
     }
 }
