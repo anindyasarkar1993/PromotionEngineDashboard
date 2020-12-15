@@ -14,6 +14,13 @@ namespace Promotion_Engine
 
             Console.WriteLine("total number of order");
             int n = Convert.ToInt32(Console.ReadLine());
+            for (int i = 0; i < n; i++)
+            {
+                Console.WriteLine("enter the type of product:A,B,C or D");
+                string choice = Console.ReadLine();
+                Product p = new Product(choice);
+                products.Add(p);
+            }
         }
     }
 }
