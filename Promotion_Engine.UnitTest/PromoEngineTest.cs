@@ -21,5 +21,24 @@ namespace Promotion_Engine.UnitTest
             var result = Program.GetTotalPrice(lp);
             Assert.That(result, Is.EqualTo(100));
         }
+        [Test]
+        public void GetTotalPriceBackMultipleProductScenarioB()
+        {
+            List<Product> lp = new List<Product>()
+            {
+                new Product(){Id = "A", Price = 50},
+                new Product(){Id = "A", Price = 50},
+                new Product(){Id = "A", Price = 50},
+                new Product(){Id = "A", Price = 50},
+                new Product(){Id = "A", Price = 50},
+                new Product(){Id = "B", Price = 30},
+                new Product(){Id = "B", Price = 30},
+                new Product(){Id = "B", Price = 30},
+                new Product(){Id = "B", Price = 30},
+                new Product(){Id = "B", Price = 30},
+                new Product(){Id = "C", Price = 20}
+            };
+            
+        }
     }
 }
