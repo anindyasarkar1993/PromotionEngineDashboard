@@ -44,6 +44,20 @@ namespace Promotion_Engine.UnitTest
         [Test]
         public void GetTotalPriceBackMultipleProductScenarioC()
         {
+            List<Product> lp = new List<Product>()
+            {
+                new Product(){Id = "A", Price = 50},
+                new Product(){Id = "A", Price = 50},
+                new Product(){Id = "A", Price = 50},
+                new Product(){Id = "B", Price = 30},
+                new Product(){Id = "B", Price = 30},
+                new Product(){Id = "B", Price = 30},
+                new Product(){Id = "B", Price = 30},
+                new Product(){Id = "B", Price = 30},
+                new Product(){Id = "C", Price = 20},
+                new Product(){Id = "D", Price = 15}
+
+            };
             
         }
     }
