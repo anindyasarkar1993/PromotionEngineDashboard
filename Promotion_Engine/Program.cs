@@ -21,6 +21,8 @@ namespace Promotion_Engine
                 Product p = new Product(choice);
                 products.Add(p);
             }
+            //Total Price for Product List
+            int totalPrice = GetTotalPrice(products);
         }
         public static int GetTotalPrice(List<Product> products)
         {
