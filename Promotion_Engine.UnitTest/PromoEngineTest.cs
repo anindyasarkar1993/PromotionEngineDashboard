@@ -61,5 +61,10 @@ namespace Promotion_Engine.UnitTest
             var result = Program.GetTotalPrice(lp);
             Assert.That(result, Is.EqualTo(285));
         }
+        [Test]
+        public void GetTotalPriceBackSingleProductAB()
+        {
+            
+        }
     }
 }
