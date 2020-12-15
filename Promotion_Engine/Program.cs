@@ -22,7 +22,7 @@ namespace Promotion_Engine
                 products.Add(p);
             }
         }
-        public static void GetTotalPrice(List<Product> products)
+        public static int GetTotalPrice(List<Product> products)
         {
             int counterofA = 0;
             int priceofA = 50;
@@ -56,7 +56,8 @@ namespace Promotion_Engine
             int totalPriceofB = (counterofB / 2) * 45 + (counterofB % 2 * priceofB);
             int totalPriceofC = (CounterofC * priceofC);
             int totalPriceofD = (CounterofD * priceofD);
-            Console.WriteLine(totalPriceofA+ totalPriceofB+ totalPriceofC+ totalPriceofD);
+            int cost = totalPriceofA + totalPriceofB + totalPriceofC + totalPriceofD;
+            return cost;
 
         }
     }
