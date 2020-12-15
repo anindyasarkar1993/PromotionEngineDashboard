@@ -64,7 +64,11 @@ namespace Promotion_Engine.UnitTest
         [Test]
         public void GetTotalPriceBackSingleProductAB()
         {
-            
+            List<Product> lp = new List<Product>()
+            {
+                new Product(){Id = "A", Price = 50},
+                new Product(){Id = "B", Price = 30},
+            };
         }
     }
 }
