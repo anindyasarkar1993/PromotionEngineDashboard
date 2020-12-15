@@ -23,6 +23,9 @@ namespace Promotion_Engine
             }
             //Total Price for Product List
             int totalPrice = GetTotalPrice(products);
+            //Displaying total Price to Console
+            Console.WriteLine(totalPrice);
+            Console.ReadLine();
         }
         public static int GetTotalPrice(List<Product> products)
         {
